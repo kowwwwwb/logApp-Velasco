@@ -3,7 +3,7 @@
     require('config/config.php');
     require('config/db.php');
 
-    $query = 'SELECT * FROM person';
+    $query = 'SELECT * FROM PERSON';
     $result = mysqli_query($conn, $query);
     $persons = mysqli_fetch_all($result, MYSQLI_ASSOC);
     mysqli_free_result($result);
@@ -28,13 +28,13 @@
 		
 			<div class="well">
                 <tbody>
-                <?php foreach($persons as $person) : ?>
+                <?php foreach($persons as $PERSON) : ?>
                     <tr>
                     <th scope="row"><?php echo $person['p_id'];?></th>
-                    <td><?php echo $person['firstname'];?></td>
-                    <td><?php echo $person['lastname'];?></td>
-                    <td><?php echo $person['address'];?></td>
-                    <td><?php echo $person['logdt'];?></td>
+                    <td><?php echo $PERSON['firstname'];?></td>
+                    <td><?php echo $PERSON['lastname'];?></td>
+                    <td><?php echo $PERSON['address'];?></td>
+                    <td><?php echo $PERSON['logdt'];?></td>
                     </tr>
                 <?php endforeach; ?>   
                 </tbody>

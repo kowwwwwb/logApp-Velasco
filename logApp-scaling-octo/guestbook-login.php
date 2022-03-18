@@ -8,7 +8,7 @@
 
 			$user = $_POST['username'];
 			$pass = $_POST['password'];
-			$result= $conn->query("SELECT * FROM account WHERE username='$user' AND password='$pass'"); 
+			$result= $conn->query("SELECT * FROM USERACCOUNT WHERE username='$user' AND password='$pass'"); 
 
 			$row= $result -> Fetch_array();
 			$loginCheck= $result-> num_rows;
