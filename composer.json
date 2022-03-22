@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
 "name": "kowwwwwb/logapp-velasco",
+=======
+"name": "kowwwwwb/logApp-Velasco",
+>>>>>>> ed33225d718c95977cd680d4f2a399eab843cf7c
 "type": "project",
 "minimum-stability": "stable",
 "require": {}
