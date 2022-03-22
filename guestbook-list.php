@@ -3,12 +3,12 @@
     require('config/config.php');
     require('config/db.php');
 
-    $query = 'SELECT * FROM PERSON';
+    $result= $conn->query("SELECT * FROM PERSON");
+    $query = 'SELECT * FROM PERSON ORDER BY pid DESC';
     $result = mysqli_query($conn, $query);
     $persons = mysqli_fetch_all($result, MYSQLI_ASSOC);
     mysqli_free_result($result);
     mysqli_close($conn);
-
 ?>
 
 <?php include('inc/header.php'); ?>

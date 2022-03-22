@@ -1,9 +1,5 @@
 <?php
 
-$host="localhost";
-$user="root";
-$password="";
-$db="convelpas";
 
 	// Create Connection
 	$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
