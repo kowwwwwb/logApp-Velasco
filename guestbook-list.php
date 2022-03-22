@@ -30,7 +30,7 @@
                 <tbody>
                 <?php foreach($persons as $PERSON) : ?>
                     <tr>
-                    <th scope="row"><?php echo $person['p_id'];?></th>
+                    <th scope="row"><?php echo $person['pid'];?></th>
                     <td><?php echo $PERSON['firstname'];?></td>
                     <td><?php echo $PERSON['lastname'];?></td>
                     <td><?php echo $PERSON['address'];?></td>
